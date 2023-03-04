@@ -1,8 +1,9 @@
 {
-  "extends": ["airbnb"],
+  "extends": ["next", "airbnb"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "linebreak-style": ["error", "windows"],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".tsx"] }]
   }
 }

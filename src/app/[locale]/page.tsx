@@ -1,5 +1,5 @@
-import s from './page.module.css'
 import { useTranslations } from 'next-intl'
+import s from './page.module.css'
 
 export default function Home() {
   const t = useTranslations('Home')
