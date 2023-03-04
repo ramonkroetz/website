@@ -1,5 +1,5 @@
 export default {
   Home: {
-    wait: 'Aguarde!',
+    wait: 'Aguarde!!',
   },
 }
