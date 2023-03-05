@@ -4,7 +4,7 @@ import React from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { Montserrat } from 'next/font/google'
-import banner from '@/assets/images/banner.jpg'
+import banner from '@/assets/images/banner.png'
 import Image from 'next/image'
 
 import { Header } from '@/components/Header/Header'
