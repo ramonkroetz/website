@@ -1,9 +1,91 @@
-.main {
+.section {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  justify-content: center;
+  margin: 120px 0;
+}
+
+.container {
+  composes: container from global;
+  padding: 0 16px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profilePictureWrapper {
+  padding: 16px;
+  border-radius: 10px;
+  background-color: var(--racing-green);
+  margin-bottom: 16px;
+  align-self: center;
+}
+
+.profilePicture {
+  width: 200px;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.profileInfo {
+  padding: 30px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--racing-green-op-06);
+}
+
+.profileName {
   font-size: 30px;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profileHr {
+  margin: 20px 0;
+  width: 40px;
+  border-color: var(--silver-op-03);
+}
+
+.profileDescription {
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 425px) {
+  .section {
+    margin: 160px 0;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .container {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .profilePictureWrapper {
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 0;
+    align-self: auto;
+  }
+
+  .profileInfo {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profileInfo {
+    padding: 30px 80px;
+  }
 }

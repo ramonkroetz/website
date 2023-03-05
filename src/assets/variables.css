@@ -1,5 +1,11 @@
 :root {
   --max-width: 1100px;
   --white: #ffffff;
+  --black: #000000;
+  --black-op-06: rgba(0, 0, 0, 0.6);
+  --black-op-05: rgba(0, 0, 0, 0.5);
+  --black-op-01: rgba(0, 0, 0, 0.1);
   --racing-green: #0d170f;
+  --racing-green-op-06: rgba(13, 23, 15, 0.6);
+  --silver-op-03: rgb(204, 204, 204, 0.3);
 }

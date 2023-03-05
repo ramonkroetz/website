@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  background-image: linear-gradient(to bottom, var(--black-op-06), var(--black-op-05), var(--black-op-01));
+}
+
+.container {
+  composes: container from global;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.container:first-child {
+  border-bottom: 1px dashed var(--silver-op-03);
+}
+
+.social {
+  display: flex;
+}
+
+.socialLink {
+  width: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.socialLink:hover {
+  opacity: 0.5;
+}
+
+.logoContainer {
+  composes: container from global;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoName {
+  position: absolute;
+  width: 114px;
+  top: -20px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.languageLink {
+  color: var(--white);
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-left: 8px;
+  letter-spacing: 1px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.languageLink:hover {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 425px) {
+  .container {
+    padding: 30px 16px;
+  }
+
+  .logoName {
+    width: 166px;
+    top: -28px;
+  }
+}

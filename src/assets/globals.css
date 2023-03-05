@@ -7,8 +7,6 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
-  height: 100%;
   width: 100%;
   color: var(--white);
   background: var(--racing-green);
@@ -18,4 +16,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
 }
