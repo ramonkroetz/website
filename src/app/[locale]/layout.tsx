@@ -33,7 +33,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
     <html lang={locale}>
       <body className={f.variable}>
-        <Image priority className={s.banner} src={banner} alt={t('banner')} />
+        <Image priority className={s.banner} src={banner} alt={t('banner')} fill />
         <Header />
         <main className={s.main}>{children}</main>
       </body>
