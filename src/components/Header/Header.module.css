@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 30px 16px;
 }
 
 .container:first-child {
@@ -26,8 +26,8 @@
 }
 
 .socialLink {
-  width: 18px;
-  margin-right: 8px;
+  width: 20px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -46,8 +46,8 @@
 
 .logoName {
   position: absolute;
-  width: 114px;
-  top: -20px;
+  width: 128px;
+  top: -28px;
 }
 
 .language {
@@ -60,10 +60,10 @@
   cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
-  margin-left: 8px;
+  margin-left: 10px;
   letter-spacing: 1px;
   border: 2px solid var(--white);
-  border-radius: 50%;
+  border-radius: 10px;
   height: 30px;
   width: 30px;
   display: flex;
@@ -76,12 +76,7 @@
 }
 
 @media screen and (min-width: 425px) {
-  .container {
-    padding: 30px 16px;
-  }
-
   .logoName {
     width: 166px;
-    top: -28px;
   }
 }

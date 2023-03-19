@@ -23,12 +23,12 @@
   background-color: var(--racing-green);
   margin-bottom: 16px;
   align-self: center;
+  height: 286px;
+  width: 232px;
 }
 
 .profilePicture {
-  width: 200px;
   object-fit: cover;
-  height: 250px;
   border-radius: 10px;
 }
 

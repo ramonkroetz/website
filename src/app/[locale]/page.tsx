@@ -6,11 +6,12 @@ import s from './page.module.css'
 
 export default function Home() {
   const t = useTranslations('Home')
+
   return (
     <section className={s.section}>
       <div className={s.container}>
         <div className={s.profilePictureWrapper}>
-          <Image className={s.profilePicture} src={ramon} alt={t('picture')} />
+          <Image priority width={200} height={250} className={s.profilePicture} src={ramon} alt={t('picture')} />
         </div>
         <div className={s.profileInfo}>
           <h2 className={s.profileName}>Ramon Kroetz</h2>

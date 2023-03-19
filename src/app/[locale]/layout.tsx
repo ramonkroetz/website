@@ -4,7 +4,7 @@ import React from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { Montserrat } from 'next/font/google'
-import banner from '@/assets/images/banner.png'
+import banner from '@/assets/images/banner.jpg'
 import Image from 'next/image'
 
 import { Header } from '@/components/Header/Header'
@@ -33,7 +33,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
     <html lang={locale}>
       <body className={f.variable}>
-        <Image className={s.banner} src={banner} alt={t('banner')} />
+        <Image priority className={s.banner} src={banner} alt={t('banner')} fill />
         <Header />
         <main className={s.main}>{children}</main>
       </body>
