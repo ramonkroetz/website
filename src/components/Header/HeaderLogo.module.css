@@ -1,0 +1,21 @@
+.logoContainer {
+  composes: container from global;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logoName {
+  position: absolute;
+  width: 128px;
+  top: -28px;
+}
+
+@media screen and (min-width: 425px) {
+  .logoName {
+    width: 166px;
+  }
+}

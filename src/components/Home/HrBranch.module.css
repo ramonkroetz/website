@@ -1,0 +1,50 @@
+.branch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 16px;
+  padding: 0 16px;
+  position: relative;
+}
+
+.blur {
+  height: 90px;
+  width: 100%;
+  top: -45px;
+  position: absolute;
+  background-image: linear-gradient(to bottom, transparent, var(--black), transparent);
+}
+
+.container {
+  composes: container from global;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.icon,
+.iconRight {
+  position: absolute;
+  width: 100%;
+  color: var(--silver-op-07);
+  margin-top: 10px;
+  max-width: 460px;
+}
+
+.iconRight {
+  display: none;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+@media screen and (min-width: 768px) {
+  .icon,
+  .iconRight {
+    width: 50%;
+  }
+
+  .iconRight {
+    display: block;
+  }
+}

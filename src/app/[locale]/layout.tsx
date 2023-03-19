@@ -1,11 +1,9 @@
 import '@/assets/variables.css'
 import '@/assets/globals.css'
 import React from 'react'
-import { useLocale, useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { Montserrat } from 'next/font/google'
-import banner from '@/assets/images/banner.jpg'
-import Image from 'next/image'
 
 import { Header } from '@/components/Header/Header'
 import s from './layout.module.css'
@@ -20,10 +18,9 @@ export const metadata = {
   description: 'Website',
 }
 
-type RootLayoutProps = { children: React.ReactNode; params: any } // TODO
+type RootLayoutProps = { children: React.ReactNode; params: { locale: string } }
 
 export default function RootLayout({ children, params }: RootLayoutProps) {
-  const t = useTranslations('Main')
   const locale = useLocale()
 
   if (params.locale !== locale) {
@@ -33,7 +30,6 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
     <html lang={locale}>
       <body className={f.variable}>
-        <Image priority className={s.banner} src={banner} alt={t('banner')} fill />
         <Header />
         <main className={s.main}>{children}</main>
       </body>

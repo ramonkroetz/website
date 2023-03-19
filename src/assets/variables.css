@@ -5,6 +5,8 @@
   --black-op-06: rgba(0, 0, 0, 0.6);
   --black-op-05: rgba(0, 0, 0, 0.5);
   --black-op-01: rgba(0, 0, 0, 0.1);
-  --racing-green: #0d170f;
+  --silver-op-07: rgb(204, 204, 204, 0.7);
   --silver-op-03: rgb(204, 204, 204, 0.3);
+
+  --header-height: 91px;
 }

@@ -35,21 +35,6 @@
   opacity: 0.5;
 }
 
-.logoContainer {
-  composes: container from global;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logoName {
-  position: absolute;
-  width: 128px;
-  top: -28px;
-}
-
 .language {
   display: flex;
   align-items: center;
@@ -73,10 +58,4 @@
 
 .languageLink:hover {
   opacity: 0.5;
-}
-
-@media screen and (min-width: 425px) {
-  .logoName {
-    width: 166px;
-  }
 }
