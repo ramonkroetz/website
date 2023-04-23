@@ -33,7 +33,6 @@
 }
 
 .iconRight {
-  display: none;
   right: 0;
   transform: scaleX(-1);
 }
@@ -42,9 +41,5 @@
   .icon,
   .iconRight {
     width: 50%;
-  }
-
-  .iconRight {
-    display: block;
   }
 }

@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 export default {
   Home: {
     banner: 'A picture in the nature with a lot of green and a little mist and a river in the middle on a cloudy day.',

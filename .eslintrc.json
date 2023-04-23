@@ -8,6 +8,8 @@
     "jsx-quotes": ["error", "prefer-single"],
     "import/prefer-default-export": "off",
     "import/extensions": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "consistent-return": "off",
+    "max-len": ["error", { "code": 120 }]
   }
 }

@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 export default {
   Home: {
     banner: 'Uma foto na natureza com muito verde e um pouco de neblina e um rio no meio num dia nublado.',
